@@ -1,0 +1,6 @@
+<div [hidden]="hide" *ngFor="let car of cars">
+    <h3>{{car.make}}</h3>
+    <h3>{{car.model}}</h3>
+    <h3>{{car.year}}</h3>
+</div>
+<input type="button" value="DisplayHide" (click)="displayData()"/>
