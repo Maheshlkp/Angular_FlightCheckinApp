@@ -9,11 +9,17 @@ export class SellerComponent implements OnInit {
 
   seller:string[];
   hide: boolean;
+  
 
   constructor() { 
 
     this.seller=["BestBuy","Amazon","Apple Store"];
     this.hide=true;
+    
+  }
+
+  myFun(){
+    return true;
   }
 
   toggle(){

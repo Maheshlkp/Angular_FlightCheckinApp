@@ -1,0 +1,15 @@
+<table>
+    <thead>
+        <tr>
+            <td [ngStyle]="{color:'color','font-size':'font-size.px'}">Id</td>
+            <td>Name</td>
+            <td>Price</td>
+        </tr>
+    </thead>
+    <tr *ngFor="let product of products">
+        <td [style.color]="color" [style.font-size.px]="fontsize">{{product.id}}</td>
+        <td [style.color]="color" [ngClass]="classObj">{{product.name}}</td>
+        <td [style.color]="'blue'" [ngClass]="classObj">{{product.price}}</td>
+    </tr>
+</table>
+    
