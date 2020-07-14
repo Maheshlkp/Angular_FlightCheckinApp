@@ -8,7 +8,7 @@ export class UppercaseConverterService {
 
   constructor(private _httpClient:HttpClient) { }
   public ConvertToUppercase(obj):any{
-    return this._httpClient.post("http://test-routes.herokuapp.com/test/uppercase",obj)
+    return this._httpClient.post('http://test-routes.herokuapp.com/test/uppercase',obj)
       // map(res=>{
       //   return res.json();
       // },

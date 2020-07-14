@@ -38,6 +38,6 @@ import {FormsModule} from '@angular/forms'
     
   ],
   providers: [UppercaseConverterService],
-  bootstrap: [AppComponent]
+  bootstrap: [UppercaseConverterComponent]
 })
 export class AppModule { }
