@@ -14,7 +14,10 @@ import {CountriesService} from './services/countries.service';
 import {HttpClientModule} from '@angular/common/http';
 import { UppercaseConverterComponent } from './components/uppercase-converter/uppercase-converter.component';
 import {UppercaseConverterService} from './services/uppercase-converter.service';
-import {FormsModule} from '@angular/forms'
+import {FormsModule} from '@angular/forms';
+import { MultipleservicesComponent } from './components/multipleservices/multipleservices.component'
+import {HelloserviceService} from './services/helloservice.service';
+import {CustomerserviceService} from './services/customerservice.service';
 
 
 
@@ -28,7 +31,8 @@ import {FormsModule} from '@angular/forms'
     NgswitchComponent,
     NgforComponent,
     CountriesComponent,
-    UppercaseConverterComponent
+    UppercaseConverterComponent,
+    MultipleservicesComponent
   ],
   imports: [
     BrowserModule,
@@ -37,7 +41,7 @@ import {FormsModule} from '@angular/forms'
     FormsModule
     
   ],
-  providers: [UppercaseConverterService],
-  bootstrap: [UppercaseConverterComponent]
+  providers: [HelloserviceService,CustomerserviceService],
+  bootstrap: [MultipleservicesComponent]
 })
 export class AppModule { }
